@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Primera Foto de Alizz</title>
+    <style>
+        body {
+            background-color: #fce4ec; /* Rosa suave de fondo */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Dancing Script', cursive;
+        }
+        .eco-animada {
+            width: 85%;
+            max-width: 400px;
+            border: 10px solid white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            /* Animación de movimiento del bebé */
+            animation: movimiento 3s infinite ease-in-out;
+        }
+        @keyframes movimiento {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .boton-volver {
+            margin-top: 20px;
+            color: #B19CD9;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <audio id="musica-eco" src="sonidolatido.mp3" loop></audio>
+
+<script>
+    // Al cargar la página, intentamos reproducir la música automáticamente
+    window.addEventListener('load', () => {
+        const audio = document.getElementById('musica-eco');
+        
+        // Intentamos reproducir. A veces el navegador pide un clic, 
+        // pero como el usuario ya hizo clic en la invitación, suele dejar pasar el sonido.
+        audio.play().catch(e => {
+            console.log("Esperando interacción para sonar");
+            // Si falla, sonará en cuanto el usuario toque cualquier parte de la pantalla
+            document.body.addEventListener('click', () => audio.play(), {once: true});
+        });
+    });
+</script>
+    <img src="ecografia.png" class="eco-animada">
+    <a href="C:\Users\user\OneDrive\Documentos\INVITACION BABY SHOWER\PARTE 1.html" class="boton-volver">← Volver a la invitación</a>
+</body>
+</html>

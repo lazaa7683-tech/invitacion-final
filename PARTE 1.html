@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Shower Sorpresa</title>
+    <link rel="stylesheet" href="C:\Users\user\OneDrive\Documentos\INVITACION BABY SHOWER\DISEÑO2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="musica" src="musica.mp3" loop></audio>
+
+    <div id="pantalla-sobre">
+        <p class="frase-espacio">Prepárate para <br> algo hermoso</p>
+        <div class="indicador">
+               <span class="flecha">👇</span>
+            <div  class="sobre-click" onclick="abrirInvitacion()">
+                <img src="SOBRE.png" alt="Sobre Invitación" class="img-sobre" alt="Abrir invitación">
+
+           </div>
+            <p class="texto-abrir">TOCA PARA ABRIR LA INVITACION</p>
+           
+        </div>
+    </div>
+
+    <main id="invitacion-principal">
+
+        <section class="seccion-deslizable fondo-A">
+               
+             <div class="contenedor-video-1">
+                   <video   autoplay   muted   loop  playsinline class="video-fondo1" >
+                         <source src="VIDEO1.mp4" type="video/mp4">
+                   </video>
+            </div>
+
+       </section>
+
+<section class="seccion-deslizable fondo-B">
+               
+             <div class="contenedor-video-2">
+                   <video   autoplay   muted   loop  playsinline  class="video-fondo2">
+                   <source src="VIDEO2.mp4" type="video/mp4">
+                      
+                        </video>
+            </div>
+
+       </section>
+
+
+
+
+
+
+        <section class="seccion-deslizable fondo-1">
+               
+             <div class="contenedor-video-pro">
+                   <video   autoplay   muted   loop  playsinline  class="video-fondo3">
+                   <source src="VIDEO3.mp4" type="video/mp4">
+                      
+                        </video>
+            </div>
+
+       </section>
+
+       <section class="seccion-deslizable fondo-2">
+
+        <P id="frase-interactiva"> <a href="ecogafia.html" class="link-ecografia">Mira mi primera foto ❤️</a></P>
+           
+         </section>
+
+         <section class="seccion-deslizable fondo-3">
+
+                   <div class="contenedor-papis-creativo">
+                               <p class="frase-intro">Sus Papitos:</p>
+                               <h2 class="nombres-dorados">
+                                Juan <span class="y-rosa">&</span> Kathia
+                               </h2>
+       
+                    </div>
+
+                    <div>
+                          <p class="Oracion"> Están muy felices y nos gustaría que estuvieran  <br> 
+                                    en la primera fiestita que haremos los tíos en  <br>
+                                     su honor, para darle la bienvenida al mundo.   <br>
+                          </p>
+
+                    </div>
+
+         </section>
+                
+            <section class="seccion-deslizable fondo-4">
+                <div class="info-evento">
+              
+            
+                    <p class="direccion">
+                       <strong>DIRECCIÒN</strong><br><br>
+                     Segunda escalera de La Flor, km 17, Jr. <br>
+                     Santa Rosa 201, La Flor, Carabayllo <br>
+                       
+                    </p>
+                    <br>
+                    <p Class="datos-direccion">   
+
+                           ( Subir por la escalera Cruz Milagrosa; es el primer portón de madera )
+
+                    </p>
+
+                    <br>
+
+                     <a href="https://maps.app.goo.gl/DnTJFdnj9zbqS1sd6" class="btn btn-dorado">UBICACION</a>
+            
+             </div>
+                    
+            </section>
+
+                <section class="seccion-deslizable fondo-5">
+
+                    <div class="botones-interactivos">
+                       <a href="https://wa.me/51952352644?text=¡Hola!%20Quiero%20confirmar%20mi%20asistencia%20del%20baby%20shower%20de%20Juan%20y%20Kathia" 
+             class="btn btn-rosa"
+             target="_blank">
+                        
+                        📱 CONFIRMA TU ASISTENCIA </a>
+                    </div>
+                    <footer class="final">
+                      <p>¡No faltes, será inolvidable!</p>
+                    </footer>
+
+        
+           
+                </section>
+    </main>
+    <script>
+        function abrirInvitacion() {
+            // Reproduce la música
+            const audio = document.getElementById('musica');
+            audio.play().catch(e => console.log("Música activada"));
+
+            // Anima el sobre hacia arriba
+            document.getElementById('pantalla-sobre').classList.add('subir-sobre');
+
+            // Muestra la invitación y permite el scroll
+            setTimeout(() => {
+                document.getElementById('invitacion-principal').classList.add('mostrar-invitacion');
+                document.body.style.overflowY = "auto";
+            }, 300);
+        }
+    </script>
+
+    <script src="diseñojava.js"></script>
+
+     
+</body>
+</html>

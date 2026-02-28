@@ -1,0 +1,124 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baby Shower - Alizz Itzel</title>
+<link rel="stylesheet" href="C:\Users\user\OneDrive\Documentos\INVITACION BABY SHOWER\DISEÑO.CSS">
+</head>
+
+<body>
+
+<!-- 🎵 AUDIO -->
+<audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<!-- 💌 PANTALLA 1 - SOBRE -->
+<section id="pantalla1" class="pantalla">
+    
+
+  <header class="hero">
+               <p class="subtitulo">¡BABY SHOWER SORPRESA!</p>
+               <h1 class="nombre-bebe">¡Es una niña</h1>
+   </header>
+
+
+
+
+
+
+
+
+
+</section>
+
+<!-- 🎀 PANTALLA 2 - INVITACIÓN -->
+<section id="pantalla2" class="pantalla oculto">
+
+    <div class="contenido">
+
+        <h1 class="nombre">Alizz Itzel</h1>
+
+        <p class="mensaje">
+        Aquí va tu mensaje sorpresa de parte de los tíos...
+        </p>
+
+        <p class="info">Martes, 3 de marzo de 2026</p>
+        <p class="info">7:00 PM</p>
+
+        <a href="https://www.google.com/maps?q=TU_DIRECCION_AQUI"
+           target="_blank" class="boton">
+           📍 Ver Ubicación
+        </a>
+
+        <a href="https://wa.me/TUNUMERO"
+           target="_blank" class="boton">
+           💬 Confirmar Asistencia
+        </a>
+
+        <img src="coreografia.png" class="coreografia">
+
+    </div>
+
+</section>
+
+<script>
+function abrirInvitacion() {
+    document.getElementById("pantalla1").classList.add("oculto");
+    document.getElementById("pantalla2").classList.remove("oculto");
+    document.getElementById("musica").play();
+}
+</script>
+
+</body>
+</html>
+

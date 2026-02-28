@@ -1,0 +1,498 @@
+
+.datos-direccion {
+
+font-size: 0.7rem;
+
+
+ }
+
+
+
+
+
+.video-fondo1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: contain;
+    z-index: 0
+
+}
+
+.video-fondo2 {
+
+     position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: contain;
+    z-index: 0
+
+    }
+
+.video-fondo3 {
+
+     position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: contain;
+    z-index: 0
+
+    }
+
+
+
+
+
+
+
+.contenedor-papis-creativo {
+
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para la frase "Mis Papis" */
+
+.frase-intro {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: #5c382d; /* Color café suave para que no compita con el dorado */
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    margin-top: -345px;
+    font-weight: 1030; 
+   
+}
+
+/* Letra dorada con forma bonita y brillo */
+.nombres-dorados {
+    /* Cambiamos la fuente a una más robusta */
+    font-family: 'dancing Script', cursive; 
+    
+    /* El valor 900 es el más grueso posible (Black/Extra Bold) */
+    font-weight: 1100; 
+    
+    font-size: 2.9rem;
+    text-align: center;
+   margin: 5px 0;
+    
+    background: linear-gradient(to bottom, #8B6B21, #CDA434, #A67C26, #CDA434, #8B6B21);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    
+    /* Un pequeño sombreado para que resalte aún más */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.Oracion { 
+
+    
+top: 323px;
+z-index: 10;
+position: relative  ;
+
+    margin-top: 230px; /* Espacio con la foto */
+    color: #5d4037; /* Café oscuro para legibilidad */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.9;
+    font-size: 1.0rem;
+    font-family: 'Dancing Script', cursive;
+
+    }
+
+
+
+
+
+.poema-dorado {
+    color: #c5a059; /* Dorado elegante */
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lobster', cursive ;
+    font-size: 1.0rem;
+    line-height: 1.4;
+    text-align: center; /* Centrado perfecto */
+    max-width: 80%; /* No se va a los laterales */
+    margin: 20px auto;
+    margin-left: 870px;
+    
+    /* Animación de aparición delicada */
+    overflow: hidden;
+    white-space: normal; 
+    animation: escrituraDelicada 4s ease-out forwards;
+    opacity: 0;
+
+    z-index: 10;
+    position: relative ;
+    margin-top: -20px;
+}
+
+@keyframes escrituraDelicada {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* La frase antes de ser aplastada */
+.link-ecografia {
+    color: #B19CD9; /* Morado pastel hermoso */
+    font-family: 'Dancing Script', cursive; /* Tu letra cursiva */
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: underline;
+    display: block;
+    transition: transform 0.3s ease;
+    z-index: 10;
+    position: relative ;
+    top: 380px;
+
+
+    
+}
+
+/* LA ANIMACIÓN DE MOVIMIENTO: Simula que el bebé se estira y respira */
+.bebe-en-movimiento {
+    animation: movimientoRealista 4s infinite ease-in-out;
+    border: 8px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(177, 156, 217, 0.5); /* Brillo suave morado */
+}
+
+@keyframes movimientoRealista {
+    0%, 100% { transform: scale(1) rotate(0deg); filter: brightness(1); }
+    30% { transform: scale(1.03) rotate(1deg); filter: brightness(1.1); }
+    60% { transform: scale(1.01) rotate(-1deg); filter: brightness(1); }
+    80% { transform: scale(1.04) rotate(0deg); filter: brightness(1.05); }
+}
+
+
+
+
+
+
+
+
+
+
+.name { 
+
+
+position: absolute;
+margin-top: 150px;
+background-clip: text;
+font-family: 'Dancing Script';
+background: url('');
+text-align: centre ; 
+width: 80%;
+transform: translateX(-50%);
+top: 210px;
+left: 50%;
+z-index: 10;
+font-size: 2.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo-fijo-superior {
+
+top: 14px;
+text-align: center;
+position: absolute;
+left: 50%  ;
+transform: translateX(-50%) ;
+
+
+}
+
+
+/* Variables de color para niña */
+:root {
+    --rosa-claro: #fdf2f5;
+    --rosa-medio: #f8bbd0;
+    --rosa-fuerte: #f06292;
+    --dorado: #c5a059;
+    --blanco: #ffffff;
+    --gris-texto: #5d4037;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--rosa-claro);
+    color: var(--gris-texto);
+    overflow: hidden; /* Bloqueamos scroll al inicio */
+}
+
+/* --- ESTILOS DEL SOBRE --- */
+#pantalla-sobre {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--rosa-claro);
+    background-size: contain;
+    background-position: center;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    flex-direction: column;
+    
+    /* FONDO: Asegúrate de que el archivo esté en la misma carpeta que este código */
+    background-image: url('fondo.png'); 
+    background-repeat: no-repeat;
+}
+
+.frase-espacio {
+    position: absolute;
+    /* ESTOS VALORES LO UBICAN EN EL ESPACIO BLANCO */
+    top: 35%;      /* Ajusta la altura respecto al osito */
+    right: 41%;    /* Lo mueve al espacio blanco de la derecha */
+    
+    /* ESTILO VISUAL */
+    font-family: 'Dancing Script', cursive; /* Tu fuente elegante */
+    color: #c5a059; /* El color dorado que ya usas */
+    font-size: 2.8rem;
+    line-height: 1.2;
+    text-align: center;
+    pointer-events: none; /* Para que no estorbe al hacer clic en el sobre */
+
+    /* ANIMACIÓN DE APARICIÓN SUAVE */
+    animation: aparecerFrase  4s ease-in-out infinite;
+}
+
+@keyframes aparecerFrase {
+    0%, 100% { 
+        opacity: 0.3; 
+        transform: scale(0.95); 
+    }
+    50% { 
+        opacity: 1; 
+        transform: scale(1); 
+        text-shadow: 0 0 10px rgba(197, 160, 89, 0.3);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.img-sobre {
+    width: 340px;
+    max-width: 20vw;
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.2));
+    cursor: pointer;
+    margin-top: 55vh;
+    z-index: 101;
+    transition: transform 0.3s;
+}
+
+.flecha {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    animation: bounce 1.5s infinite;
+    position: absolute;
+    top: 48% ;
+    z-index: 101;
+    left: 48%;
+}
+
+.texto-abrir {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--dorado);
+}
+
+/* --- ESTILOS DE LA INVITACIÓN --- */
+#invitacion-principal {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--blanco);
+    position: relative;
+    top: 100vh; /* Escondida inicialmente */
+    transition: top 0.8s ease-out;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.hero {
+    padding: 50px 20px;
+    
+  
+}
+
+.nombre-bebe {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: var(--dorado);
+}
+
+.foto-perfil {
+    width: 199px;
+    height: 270px;
+    border-radius: 50%;
+    border: 4px solid var(--blanco);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    object-fit: cover;
+    margin: 20px 0;
+    margin-top: 9%;
+}
+
+.fecha-caja {
+    margin: 30px auto;
+    width: 80%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+.numero-dia {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--rosa-fuerte);
+}
+
+
+.seccion-deslizable {
+    width: 100%;
+    height: 100vh; /* Cada sección mide el alto total del celular */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: contain ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* AQUÍ PONES TUS 3 IMÁGENES DIFERENTES */
+
+.fondo-A
+.Fondo-B
+.fondo-1 { background-image: url(''); }
+.fondo-2 { background-image: url('fondo2.1.png'); }
+.fondo-3 { background-image: url('JyK.png'); }
+
+.fondo-4 { background-image: url('fondo56.png'); }
+.fondo-5 { background-image: url('fondo19.png'); }
+
+/* Ajuste para que el texto se vea pro (como el azul que te gustó) */
+.hero, .info-evento, .botones-interactivos {
+  
+    padding: 20px;
+    border-radius: 20px;
+    width: 85%;
+    margin-top: 160px;
+}
+
+
+
+
+
+/* BOTONES */
+.btn {
+    display: block;
+    width: 85%;
+    max-width: 300px;
+    margin: 15px auto;
+    padding: 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s;
+}
+
+.btn-dorado { background: var(--dorado); color: var(--blanco); }
+.btn-rosa { border: 2px solid var(--rosa-fuerte); color: var(--rosa-fuerte); }
+
+.btn:active { transform: scale(0.95); }
+
+/* CLASES DE ANIMACIÓN */
+.subir-sobre { transform: translateY(-100vh); }
+.mostrar-invitacion { top: 0 !important; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
