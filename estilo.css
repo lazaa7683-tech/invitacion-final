@@ -1,7 +1,24 @@
 
-.datos-direccion {
+.final {
+    font-size: 0.7rem;
+    margin-top: -60px;
+    margin-left: -150px;
+ }
+
+.direccion { 
 
 font-size: 0.7rem;
+
+}
+
+
+
+
+
+
+.datos-direccion {
+
+font-size: 0.4rem;
 
 
  }
@@ -78,12 +95,12 @@ font-size: 0.7rem;
 
 .frase-intro {
     font-family: 'Dancing Script', cursive; 
-    font-size: 1.3rem;
+    font-size: 0.5rem;
     letter-spacing: 2px;
     color: #5c382d; /* Color café suave para que no compita con el dorado */
     margin-bottom: 5px;
     text-transform: uppercase;
-    margin-top: -345px;
+    margin-top: -200px;
     font-weight: 1030; 
    
 }
@@ -96,7 +113,7 @@ font-size: 0.7rem;
     /* El valor 900 es el más grueso posible (Black/Extra Bold) */
     font-weight: 1100; 
     
-    font-size: 2.9rem;
+    font-size: 1.6rem;
     text-align: center;
    margin: 5px 0;
     
@@ -112,15 +129,15 @@ font-size: 0.7rem;
 .Oracion { 
 
     
-top: 323px;
+top: 200px;
 z-index: 10;
 position: relative  ;
 
-    margin-top: 230px; /* Espacio con la foto */
+    margin-top: 50px; /* Espacio con la foto */
     color: #5d4037; /* Café oscuro para legibilidad */
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.9;
-    font-size: 1.0rem;
+    line-height: 1.2;
+    font-size: 0.8rem;
     font-family: 'Dancing Script', cursive;
 
     }
@@ -148,7 +165,7 @@ position: relative  ;
 
     z-index: 10;
     position: relative ;
-    margin-top: -20px;
+    margin-top: 0px;
 }
 
 @keyframes escrituraDelicada {
@@ -193,14 +210,14 @@ position: relative  ;
 .link-ecografia {
     color: #B19CD9; /* Morado pastel hermoso */
     font-family: 'Dancing Script', cursive; /* Tu letra cursiva */
-    font-size: 1.3rem;
+    font-size: 0.6rem;
     cursor: pointer;
     text-decoration: underline;
     display: block;
     transition: transform 0.3s ease;
     z-index: 10;
     position: relative ;
-    top: 380px;
+    top: 190px;
 
 
     
@@ -311,6 +328,7 @@ body {
     transition: transform 1s ease-in-out;
     flex-direction: column;
     
+    
     /* FONDO: Asegúrate de que el archivo esté en la misma carpeta que este código */
     background-image: url('fondo.png'); 
     background-repeat: no-repeat;
@@ -325,7 +343,7 @@ body {
     /* ESTILO VISUAL */
     font-family: 'Dancing Script', cursive; /* Tu fuente elegante */
     color: #c5a059; /* El color dorado que ya usas */
-    font-size: 2.8rem;
+    font-size: 1.4rem;
     line-height: 1.2;
     text-align: center;
     pointer-events: none; /* Para que no estorbe al hacer clic en el sobre */
@@ -363,6 +381,7 @@ body {
     margin-top: 55vh;
     z-index: 101;
     transition: transform 0.3s;
+    margin-left: 6px;
 }
 
 .flecha {
@@ -382,6 +401,7 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     color: var(--dorado);
+    font-size: 0.4rem;
 }
 
 /* --- ESTILOS DE LA INVITACIÓN --- */
@@ -483,8 +503,8 @@ body {
     transition: transform 0.2s;
 }
 
-.btn-dorado { background: var(--dorado); color: var(--blanco); }
-.btn-rosa { border: 2px solid var(--rosa-fuerte); color: var(--rosa-fuerte); }
+.btn-dorado { background: var(--dorado); color: var(--blanco); font-size: 10px ; margin-bottom: 250px; }
+.btn-rosa { border: 2px solid var(--rosa-fuerte); color: var(--rosa-fuerte); margin-bottom: 135px; }
 
 .btn:active { transform: scale(0.95); }
 
